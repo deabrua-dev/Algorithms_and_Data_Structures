@@ -1,14 +1,14 @@
 package structures
 
 class SinglyLinkedList<T> {
-    class Node<T>(
-        private var value: T,
+    class Node<T> (
+        private var value: T?,
         private var next: Node<T>? = null
     ) {
         fun data() = this.value
         fun next() = this.next
 
-        fun changeData(value: T) {
+        fun changeData(value: T? = null) {
             this.value = value
         }
 
@@ -23,71 +23,56 @@ class SinglyLinkedList<T> {
     private var length: Int = 0
 
     fun length() = this.length
+    fun isEmpty() = this.head == null
 
     fun push(value: T) {
-        if(isEmpty()) {
+        if (isEmpty()) {
             this.head = Node(value)
             this.tail = this.head
-            this.length++
         } else {
-            val newNode: Node<T> = Node(value, this.head)
+            val newNode = Node(value, this.head)
             this.head = newNode
-            this.length++
         }
-    }
-
-    fun append(value: T) {
-        if(isEmpty()) {
-            this.head = Node(value)
-            this.tail = this.head
-            this.length++
-        } else {
-            this.tail?.changeNext(Node(value))
-            this.tail = this.tail?.next()
-            this.length++
-        }
-    }
-
-    fun insert(index: Int, value: T) {
-        if(index < 0 || index > this.length) return
-        if(index == 0) {
-            this.push(value)
-            return
-        }
-        if(index == this.length) {
-            this.append(value)
-            return
-        }
-        var temp: Node<T>? = this.head
-        val newNode: Node<T> = Node(value)
-        var counter: Int = 0
-        while(counter != index - 1) {
-            temp = temp?.next()
-            counter++
-        }
-        newNode.changeNext(temp?.next())
-        temp?.changeNext(newNode)
         this.length++
     }
 
+    fun append(value: T) {
+        if (isEmpty()) {
+            this.head = Node(value)
+            this.tail = this.head
+        } else {
+            this.tail?.changeNext(Node(value))
+            this.tail = this.tail?.next()
+        }
+        this.length++
+    }
+
+    fun insert(index: Int, value: T) {
+        if (index < 0 || index > this.length) return
+        if (index == 0) {
+            this.head = Node(value, this.head)
+            return
+        }
+        if (index == this.length) {
+            this.append(value)
+            return
+        }
+        val prevNode = this.getAt(index - 1)
+        val nextNode = prevNode?.next()
+        prevNode?.changeNext(Node(value, nextNode))
+        this.length++
+    }
 
     fun remove(index: Int) {
-        if(index < 0 || index > this.length) return
-        var currNode: Node<T>? = this.head
-        var prevNode: Node<T>? = null
-        if(index == 0) {
+        if (index < 0 || index >= this.length) return
+        if (index == 0) {
             this.head = this.head?.next()
             this.length--
             return
         }
-        var counter: Int = 0
-        while(counter != index) {
-            prevNode = currNode
-            currNode = prevNode?.next()
-            counter++
-        }
-        prevNode?.changeNext(currNode?.next())
-        if(index == this.length) this.tail = prevNode
+        val prevNode = this.getAt(index - 1)
+        val nextNode = prevNode?.next()?.next()
+        prevNode?.changeNext(nextNode)
         this.length--
     }
 
@@ -97,48 +82,31 @@ class SinglyLinkedList<T> {
         this.length = 0
     }
 
-    fun isEmpty() = this.head == null
-
     fun indexOf(value: T) : Int {
-        var temp: Node<T>? = this.head
-        var counter: Int = 0
-        while (counter != this.length) {
-            if (temp!!.data() == value) return counter
-            temp = temp.next()
-            counter++
+        for (index in 0 until this.length) {
+            if (this.getAt(index)!!.data() == value) return index
         }
         return -1
     }
 
     fun lastIndexOf(value: T) : Int {
-        var temp: Node<T>? = this.head
-        var counter: Int = 0
-        var result: Int = -1
-        while (counter != this.length) {
-            if (temp!!.data() == value) result = counter
-            temp = temp.next()
-            counter++
+        var result = -1
+        for (index in 0 until this.length) {
+            if (this.getAt(index)!!.data() == value) result = index
         }
         return result
     }
 
-    operator fun get(index: Int): T {
-        var temp: Node<T>? = this.head
-        var counter: Int = 0
+    private fun getAt(index: Int) : Node<T>? {
+        var temp = this.head
+        var counter = 0
         while (counter != index) {
             temp = temp?.next()
             counter++
         }
-        return temp!!.data()
+        return temp
     }
 
-    operator fun set(index: Int, value: T) {
-        var temp: Node<T>? = this.head
-        var counter: Int = 0
-        while (counter != index) {
-            temp = temp?.next()
-            counter++
-        }
-        temp!!.changeData(value)
-    }
+    operator fun get(index: Int): T? = this.getAt(index)!!.data()
+    operator fun set(index: Int, value: T) = this.getAt(index)!!.changeData(value)
 }

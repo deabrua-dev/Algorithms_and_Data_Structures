@@ -1,13 +1,21 @@
-import structures.SinglyLinkedList
+import structures.DoublyLinkedList
 
 fun main() {
-    var list = SinglyLinkedList<String>()
+    val list = DoublyLinkedList<String>()
 
-    list.push("sdadsa")
-    list.push("Test1")
+    list.append("Test0")
+    list.append("Test1")
     list.append("Test2")
-    list.push("Test3")
-
+    list.append("Test3")
+    list.append("Test4")
+    list.append("Test5")
+    list.append("Test6")
+    list.insert(3,"Test2")
+    println("Test get: " + list[6])
+    list[6] = "Punk"
+    println("Test set: " + list[6])
+    list.remove(1)
+    println(list.indexOf("Test2"))
     for(i in 0 until list.length()) {
         println(list[i])
     }
