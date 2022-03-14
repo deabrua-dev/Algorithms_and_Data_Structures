@@ -1,7 +1,4 @@
 # Default ignored files
-/build/
-.grandle
-*.class
 /shelf/
 /workspace.xml
 # Editor-based HTTP Client requests
