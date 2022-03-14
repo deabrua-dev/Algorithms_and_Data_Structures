@@ -8,10 +8,6 @@ class Queue<T> {
         fun data() = this.value
         fun next() = this.next
 
-        fun changeData(value: T? = null) {
-            this.value = value
-        }
-
         fun changeNext(next: Node<T>? = null) {
             this.next = next
         }
@@ -42,6 +38,7 @@ class Queue<T> {
     fun pop() {
         if (isEmpty()) return
         this.head = this.head?.next()
+        if (this.head == null) this.tail = null
         this.length--
     }
 }
