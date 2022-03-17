@@ -1,4 +1,9 @@
 # Default ignored files
+*.class
+/build/
+/.gradle/
+
+
 /shelf/
 /workspace.xml
 # Editor-based HTTP Client requests
