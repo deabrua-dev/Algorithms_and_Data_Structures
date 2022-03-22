@@ -3,7 +3,7 @@ package structures
 import kotlin.math.roundToInt
 
 class DoublyLinkedList<T> {
-    class Node<T> (
+    private class Node<T> (
         private var value: T?,
         private var prev: Node<T>? = null,
         private var next: Node<T>? = null

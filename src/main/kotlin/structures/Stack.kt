@@ -1,7 +1,7 @@
 package structures
 
 class Stack<T> {
-    class Node<T> (
+    private class Node<T> (
         private var value: T?,
         private var next: Node<T>? = null
     ) {

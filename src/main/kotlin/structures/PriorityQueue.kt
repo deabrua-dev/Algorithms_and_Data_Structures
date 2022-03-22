@@ -1,7 +1,7 @@
 package structures
 
 class PriorityQueue<T> {
-    class Node<T> (
+    private class Node<T> (
         private var value: T?,
         private var priority: Int = 0,
         private var next: Node<T>? = null

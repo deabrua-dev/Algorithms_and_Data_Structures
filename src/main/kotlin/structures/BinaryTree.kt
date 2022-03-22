@@ -1,7 +1,7 @@
 package structures
 
 class BinaryTree<T> {
-    class Node<T>(
+    private class Node<T>(
         private var data: T?,
         private var left: Node<T>? = null,
         private var right: Node<T>? = null
