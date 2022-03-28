@@ -98,6 +98,5 @@ class BinarySearchTree<T, R: Comparable<R>> {
                 throw NullPointerException()
             }
         }
-        return null
     }
 }
