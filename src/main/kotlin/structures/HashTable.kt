@@ -1,4 +1,0 @@
-package structures
-
-class HashTable {
-}
