@@ -4,3 +4,19 @@ Here you will find implementations of algorithms and data structures what i know
 This work is a part of my practice tour in Kotlin. Thanks for watching low quality code ;)
 
 I open for any critic and suggestions.
+
+## List of the Algorithms and Data Structures
+
+#### Data Structures
+
+- [Singly Linked List](src/main/kotlin/structures/SinglyLinkedList.kt)
+- [Doubly Linked List](src/main/kotlin/structures/DoublyLinkedList.kt)
+- [Queue](src/main/kotlin/structures/Queue.kt)
+- [Priority Queue](src/main/kotlin/structures/PriorityQueue.kt)
+- [Stack](src/main/kotlin/structures/Stack.kt)
+- [Binary Tree](src/main/kotlin/structures/BinaryTree.kt)
+- [Binary Search Tree](src/main/kotlin/structures/BinarySearchTree.kt)
+- [Basic Hash Table](src/main/kotlin/structures/BasicHashTable.kt)
+- [Hash Table with Open Addressing and Quadratic Probing](src/main/kotlin/structures/HashTableOpenAddressingQuadraticProbing.kt)
+- [Max Heap](src/main/kotlin/structures/MaxHeap.kt)
+- [Min Heap](src/main/kotlin/structures/MinHeap.kt)
