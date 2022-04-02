@@ -20,3 +20,14 @@ I open for any critic and suggestions.
 - [Hash Table with Open Addressing and Quadratic Probing](src/main/kotlin/structures/HashTableOpenAddressingQuadraticProbing.kt)
 - [Max Heap](src/main/kotlin/structures/MaxHeap.kt)
 - [Min Heap](src/main/kotlin/structures/MinHeap.kt)
+
+
+#### Sorting
+
+- [Bubble Sort](src/main/kotlin/algorithms/sort/BubbleSort.kt)
+- [Insertion Sort](src/main/kotlin/algorithms/sort/InsertionSort.kt)
+- [Selection Sort](src/main/kotlin/algorithms/sort/SelectionSort.kt)
+- [Heap Sort](src/main/kotlin/algorithms/sort/HeapSort.kt)
+- [Merge Sort](src/main/kotlin/algorithms/sort/MergeSort.kt) | Not Ready
+- [Quick Sort](src/main/kotlin/algorithms/sort/QuickSort.kt) | Not Ready
+- [Shell Sort](src/main/kotlin/algorithms/sort/ShellSort.kt) | Not Ready
