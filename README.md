@@ -28,6 +28,6 @@ I open for any critic and suggestions.
 - [Insertion Sort](src/main/kotlin/algorithms/sort/InsertionSort.kt)
 - [Selection Sort](src/main/kotlin/algorithms/sort/SelectionSort.kt)
 - [Heap Sort](src/main/kotlin/algorithms/sort/HeapSort.kt)
-- [Merge Sort](src/main/kotlin/algorithms/sort/MergeSort.kt) | Not Ready
+- [Merge Sort](src/main/kotlin/algorithms/sort/MergeSort.kt)
 - [Quick Sort](src/main/kotlin/algorithms/sort/QuickSort.kt) | Not Ready
 - [Shell Sort](src/main/kotlin/algorithms/sort/ShellSort.kt) | Not Ready
