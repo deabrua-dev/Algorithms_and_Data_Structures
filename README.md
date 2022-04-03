@@ -34,5 +34,5 @@ I open for any critic and suggestions.
 
 #### Search
 
-- [Binary Search](src/main/kotlin/algorithms/search/BinarySearch.kt)
 - [Linear Search](src/main/kotlin/algorithms/search/LinearSearch.kt)
+- [Binary Search](src/main/kotlin/algorithms/search/BinarySearch.kt)
