@@ -31,3 +31,8 @@ I open for any critic and suggestions.
 - [Merge Sort](src/main/kotlin/algorithms/sort/MergeSort.kt)
 - [Quick Sort](src/main/kotlin/algorithms/sort/QuickSort.kt)
 - [Shell Sort](src/main/kotlin/algorithms/sort/ShellSort.kt)
+
+#### Search
+
+- [Linear Search](src/main/kotlin/algorithms/search/BinarySearch.kt)
+- [Binary Search](src/main/kotlin/algorithms/search/LinearSearch.kt)
