@@ -7,7 +7,7 @@ I open for any critic and suggestions.
 
 ## List of the Algorithms and Data Structures
 
-#### Data Structures
+### Data Structures
 
 - [Singly Linked List](src/main/kotlin/structures/SinglyLinkedList.kt)
 - [Doubly Linked List](src/main/kotlin/structures/DoublyLinkedList.kt)
@@ -22,7 +22,7 @@ I open for any critic and suggestions.
 - [Min Heap](src/main/kotlin/structures/MinHeap.kt)
 
 
-#### Sorting
+### Sorting
 
 - [Bubble Sort](src/main/kotlin/algorithms/sort/BubbleSort.kt)
 - [Insertion Sort](src/main/kotlin/algorithms/sort/InsertionSort.kt)
@@ -32,7 +32,13 @@ I open for any critic and suggestions.
 - [Quick Sort](src/main/kotlin/algorithms/sort/QuickSort.kt)
 - [Shell Sort](src/main/kotlin/algorithms/sort/ShellSort.kt)
 
-#### Search
+
+### Search
 
 - [Linear Search](src/main/kotlin/algorithms/search/LinearSearch.kt)
 - [Binary Search](src/main/kotlin/algorithms/search/BinarySearch.kt)
+
+
+
+
+
