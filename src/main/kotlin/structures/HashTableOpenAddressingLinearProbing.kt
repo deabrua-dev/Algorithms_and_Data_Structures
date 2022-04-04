@@ -1,0 +1,4 @@
+package structures
+
+class HashTableOpenAddressingLinearProbing {
+}
