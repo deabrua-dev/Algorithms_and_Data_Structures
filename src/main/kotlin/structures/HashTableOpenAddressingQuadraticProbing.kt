@@ -6,6 +6,9 @@ class HashTableOpenAddressingQuadraticProbing<T, R>(private var capacity: Int = 
     private var map = arrayOfNulls<Node<T, R>?>(this.capacity)
     private var size = 0
 
+    fun size() = this.size
+    fun capacity() = this.capacity
+
     fun push(key: T, value: R) {
         var hashIndex = calculateHash(key)
         var magicConstant = 1
@@ -61,6 +64,6 @@ class HashTableOpenAddressingQuadraticProbing<T, R>(private var capacity: Int = 
     }
 
     private fun calculateHash(key: T) : Int {
-        return (this.capacity.toDouble() * ((key.hashCode().toDouble() * 0.6180339887) % 1)).toInt()
+        return key.hashCode() % this.capacity
     }
 }
