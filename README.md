@@ -14,12 +14,14 @@ I open for any critic and suggestions.
 - [Queue](src/main/kotlin/structures/Queue.kt)
 - [Priority Queue](src/main/kotlin/structures/PriorityQueue.kt)
 - [Stack](src/main/kotlin/structures/Stack.kt)
+- [Max Heap](src/main/kotlin/structures/MaxHeap.kt)
+- [Min Heap](src/main/kotlin/structures/MinHeap.kt)
 - [Binary Tree](src/main/kotlin/structures/BinaryTree.kt)
 - [Binary Search Tree](src/main/kotlin/structures/BinarySearchTree.kt)
 - [Basic Hash Table](src/main/kotlin/structures/BasicHashTable.kt)
 - [Hash Table with Open Addressing and Quadratic Probing](src/main/kotlin/structures/HashTableOpenAddressingQuadraticProbing.kt)
-- [Max Heap](src/main/kotlin/structures/MaxHeap.kt)
-- [Min Heap](src/main/kotlin/structures/MinHeap.kt)
+- [Hash Table with Open Addressing and Linear Probing](src/main/kotlin/structures/HashTableOpenAddressingLinearProbing.kt)
+- [Hash Table with Open Addressing and Double Hashing](src/main/kotlin/structures/HashTableOpenAddressingDoubleHashing.kt) | Not Ready
 
 
 ### Sorting
