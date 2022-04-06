@@ -41,6 +41,21 @@ I open for any critic and suggestions.
 - [Binary Search](src/main/kotlin/algorithms/search/BinarySearch.kt)
 
 
+### Graph
 
+- [Depth-first search](src/main/kotlin/algorithms/graph/DFS.kt) | Not Ready
+- [Breadth-first search](src/main/kotlin/algorithms/graph/BFS.kt) | Not Ready
+- [Dijkstra's algorithm](src/main/kotlin/algorithms/graph/Dijkstra.kt) | Not Ready
+- [Bellman–Ford algorithm](src/main/kotlin/algorithms/graph/BellmanFord.kt) | Not Ready
+- [Floyd–Warshall algorithm](src/main/kotlin/algorithms/graph/FloydWarshall.kt) | Not Ready
+- [Graph Adjacency Matrix](src/main/kotlin/algorithms/graph/GraphAdjacencyMatrix.kt) | Not Ready
+
+
+### Other
+
+- [Factorial Recursive](src/main/kotlin/algorithms/other/FactorialRecursive.kt)
+- [Factorial Non Recursive](src/main/kotlin/algorithms/other/FactorialNonRecursive.kt)
+- [Palindrome](src/main/kotlin/algorithms/other/Palindrome.kt)
+- [Max Lenght Palindrome](src/main/kotlin/algorithms/other/MaxLenghtPalindrome.kt) | Not Ready
 
 
