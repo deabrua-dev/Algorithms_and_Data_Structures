@@ -30,9 +30,6 @@ class Dijkstra(private val graph: Graph) {
                 }
             }
         }
-        for (i in 0 until size) {
-            println("Vertex: " + (i + 1) + " Distance: " + vertexDistance[i])
-        }
     }
 
     fun getPath(target: Int) : ArrayList<Int> {

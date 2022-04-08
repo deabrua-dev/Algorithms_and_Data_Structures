@@ -2,32 +2,50 @@ package algorithms.graph
 
 class FloydWarshall(private val graph: Graph) {
     private val size = this.graph.size()
-    private val vertexDistance = Array(this.size) { Int.MAX_VALUE }
-    private val vertexParent = Array(size) { 0 }
-    private val vertexVisit = Array(this.size) { false }
-    private var source = 0
-
-    fun start(source: Int = 0) {
-        if (source < 0 && source >= this.size) throw IllegalArgumentException()
-        this.source = source
-        this.vertexDistance[this.source] = 0
-
-        for (i in 0 until size) {
-            println("Vertex: " + (i + 1) + " Distance: " + vertexDistance[i])
+    private val vertexDistance = Array(this.size) { Array(size) { Int.MAX_VALUE } }
+    private val vertexParent = Array(this.size) { Array(size) { -1 } }
+    init {
+        for (i in 0 until this.graph.size()) {
+            for (j in 0 until this.graph.size()) {
+                this.vertexDistance[i][j] = this.graph.get(i, j)
+                if (this.graph.get(i, j) != 0) {
+                    this.vertexParent[i][j] = j
+                } else {
+                    this.vertexDistance[i][j] = Int.MAX_VALUE
+                    this.vertexDistance[i][i] = 0
+                }
+            }
         }
     }
 
-    fun getPath(target: Int) : ArrayList<Int> {
-        val path = ArrayList<Int>()
-        var current = target
-        while (current != this.source) {
-            path.add(current)
-            current = this.vertexParent[current]
+    fun start() {
+        for (k in 0 until this.size) {
+            for (i in 0 until this.size) {
+                for (j in 0 until this.size) {
+                    if (
+                        this.vertexDistance[i][k] != Int.MAX_VALUE &&
+                        this.vertexDistance[k][j] != Int.MAX_VALUE &&
+                        this.vertexDistance[i][j] > this.vertexDistance[i][k] + this.vertexDistance[k][j]
+                    ) {
+                        this.vertexDistance[i][j] = this.vertexDistance[i][k] + this.vertexDistance[k][j]
+                        this.vertexParent[i][j] = this.vertexParent[i][k]
+                    }
+                }
+            }
         }
-        path.add(this.source)
-        path.reverse()
+    }
+
+    fun getPath(source: Int = 0, target: Int) : ArrayList<Int> {
+        val path = ArrayList<Int>()
+        if (this.vertexParent[source][target] == -1) return path
+        var current = source
+        while (current != target) {
+            path.add(current)
+            current = this.vertexParent[current][target]
+        }
+        path.add(target)
         return path
     }
 
-    fun getPathWeight(target: Int) = this.vertexDistance[target]
+    fun getPathWeight(source: Int = 0, target: Int) = this.vertexDistance[source][target]
 }

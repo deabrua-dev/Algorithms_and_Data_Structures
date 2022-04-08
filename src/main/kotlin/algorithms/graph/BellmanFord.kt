@@ -4,7 +4,6 @@ class BellmanFord(private val graph: Graph) {
     private val size = this.graph.size()
     private val vertexDistance = Array(this.size) { Int.MAX_VALUE }
     private val vertexParent = Array(size) { -1 }
-    private val vertexVisit = Array(this.size) { false }
     private var source = 0
 
     fun start(source: Int = 0) {
@@ -37,9 +36,6 @@ class BellmanFord(private val graph: Graph) {
                     }
                 }
             }
-        }
-        for (i in 0 until size) {
-            println("Vertex: " + (i + 1) + " Distance: " + vertexDistance[i])
         }
     }
 
