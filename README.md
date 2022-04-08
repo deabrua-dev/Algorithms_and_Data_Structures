@@ -46,7 +46,7 @@ I open for any critic and suggestions.
 - [Depth-first search](src/main/kotlin/algorithms/graph/DFS.kt)
 - [Breadth-first search](src/main/kotlin/algorithms/graph/BFS.kt)
 - [Dijkstra's algorithm](src/main/kotlin/algorithms/graph/Dijkstra.kt)
-- [Bellman–Ford algorithm](src/main/kotlin/algorithms/graph/BellmanFord.kt) | Not Ready
+- [Bellman–Ford algorithm](src/main/kotlin/algorithms/graph/BellmanFord.kt)
 - [Floyd–Warshall algorithm](src/main/kotlin/algorithms/graph/FloydWarshall.kt) | Not Ready
 - [Graph Adjacency Matrix](src/main/kotlin/algorithms/graph/GraphAdjacencyMatrix.kt)
 
