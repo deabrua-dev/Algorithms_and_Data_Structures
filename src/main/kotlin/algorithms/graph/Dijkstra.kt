@@ -3,7 +3,7 @@ package algorithms.graph
 class Dijkstra(private val graph: Graph) {
     private val size = this.graph.size()
     private val vertexDistance = Array(this.size) { Int.MAX_VALUE }
-    private val vertexParent = Array(size) { 0 }
+    private val vertexParent = Array(size) { -1 }
     private val vertexVisit = Array(this.size) { false }
     private var source = 0
 
@@ -21,7 +21,10 @@ class Dijkstra(private val graph: Graph) {
             if (this.vertexDistance[vertex] == Int.MAX_VALUE) break
             this.vertexVisit[vertex] = true
             for (j in 0 until this.size) {
-                if (this.vertexDistance[vertex] + this.graph.get(vertex, j) < this.vertexDistance[j] && this.graph.get(vertex, j) > 0) {
+                if (
+                    this.vertexDistance[vertex] + this.graph.get(vertex, j) < this.vertexDistance[j] &&
+                    this.graph.get(vertex, j) > 0
+                ) {
                     this.vertexDistance[j] = this.vertexDistance[vertex] + this.graph.get(vertex, j)
                     this.vertexParent[j] = vertex
                 }
@@ -43,4 +46,6 @@ class Dijkstra(private val graph: Graph) {
         path.reverse()
         return path
     }
+
+    fun getPathWeight(target: Int) = this.vertexDistance[target]
 }
