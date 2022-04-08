@@ -43,12 +43,12 @@ I open for any critic and suggestions.
 
 ### Graph
 
-- [Depth-first search](src/main/kotlin/algorithms/graph/DFS.kt) | Not Ready
-- [Breadth-first search](src/main/kotlin/algorithms/graph/BFS.kt) | Not Ready
+- [Depth-first search](src/main/kotlin/algorithms/graph/DFS.kt)
+- [Breadth-first search](src/main/kotlin/algorithms/graph/BFS.kt)
 - [Dijkstra's algorithm](src/main/kotlin/algorithms/graph/Dijkstra.kt) | Not Ready
 - [Bellman–Ford algorithm](src/main/kotlin/algorithms/graph/BellmanFord.kt) | Not Ready
 - [Floyd–Warshall algorithm](src/main/kotlin/algorithms/graph/FloydWarshall.kt) | Not Ready
-- [Graph Adjacency Matrix](src/main/kotlin/algorithms/graph/GraphAdjacencyMatrix.kt) | Not Ready
+- [Graph Adjacency Matrix](src/main/kotlin/algorithms/graph/GraphAdjacencyMatrix.kt)
 
 
 ### Other
