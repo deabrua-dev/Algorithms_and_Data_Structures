@@ -19,9 +19,9 @@ I open for any critic and suggestions.
 - [Binary Tree](src/main/kotlin/structures/BinaryTree.kt)
 - [Binary Search Tree](src/main/kotlin/structures/BinarySearchTree.kt)
 - [Basic Hash Table](src/main/kotlin/structures/BasicHashTable.kt)
-- [Hash Table with Open Addressing and Quadratic Probing](src/main/kotlin/structures/HashTableOpenAddressingQuadraticProbing.kt)
-- [Hash Table with Open Addressing and Linear Probing](src/main/kotlin/structures/HashTableOpenAddressingLinearProbing.kt)
-- [Hash Table with Open Addressing and Double Hashing](src/main/kotlin/structures/HashTableOpenAddressingDoubleHashing.kt)
+- [Hash Table with Open Addressing and Quadratic Probing](src/main/kotlin/structures/HashTableOpenAddressingQuadraticProbing.kt) | Not Ready
+- [Hash Table with Open Addressing and Linear Probing](src/main/kotlin/structures/HashTableOpenAddressingLinearProbing.kt) | Not Ready
+- [Hash Table with Open Addressing and Double Hashing](src/main/kotlin/structures/HashTableOpenAddressingDoubleHashing.kt) | Not Ready
 
 
 ### Sorting
@@ -45,7 +45,7 @@ I open for any critic and suggestions.
 
 - [Depth-first search](src/main/kotlin/algorithms/graph/DFS.kt)
 - [Breadth-first search](src/main/kotlin/algorithms/graph/BFS.kt)
-- [Dijkstra's algorithm](src/main/kotlin/algorithms/graph/Dijkstra.kt) | Not Ready
+- [Dijkstra's algorithm](src/main/kotlin/algorithms/graph/Dijkstra.kt)
 - [Bellman–Ford algorithm](src/main/kotlin/algorithms/graph/BellmanFord.kt) | Not Ready
 - [Floyd–Warshall algorithm](src/main/kotlin/algorithms/graph/FloydWarshall.kt) | Not Ready
 - [Graph Adjacency Matrix](src/main/kotlin/algorithms/graph/GraphAdjacencyMatrix.kt)
