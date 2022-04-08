@@ -1,4 +1,5 @@
 package algorithms.graph
 
-class BellmanFord {
+class BellmanFord(private val graph: Graph) {
+
 }

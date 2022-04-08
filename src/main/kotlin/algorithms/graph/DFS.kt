@@ -45,7 +45,7 @@ class DFS(private val graph: Graph) {
         }
     }
 
-    fun getWay(target: Int) : ArrayList<Int> {
+    fun getPath(target: Int) : ArrayList<Int> {
         val path = ArrayList<Int>()
         var current = target
         while (current != this.source) {

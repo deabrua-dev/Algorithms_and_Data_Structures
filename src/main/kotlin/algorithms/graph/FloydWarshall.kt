@@ -1,4 +1,5 @@
 package algorithms.graph
 
-class FloydWarshall {
+class FloydWarshall(private val graph: Graph) {
+
 }
