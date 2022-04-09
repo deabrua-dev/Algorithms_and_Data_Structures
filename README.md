@@ -56,7 +56,7 @@ I open for any critic and suggestions.
 - [Factorial Recursive](src/main/kotlin/algorithms/other/FactorialRecursive.kt)
 - [Factorial Non Recursive](src/main/kotlin/algorithms/other/FactorialNonRecursive.kt)
 - [Palindrome](src/main/kotlin/algorithms/other/Palindrome.kt)
-- [Max Lenght Palindrome](src/main/kotlin/algorithms/other/MaxLenghtPalindrome.kt) | Not Ready
+- [Max Lenght Palindrome](src/main/kotlin/algorithms/other/MaxLenghtPalindrome.kt)
 - [Huffman Code](src/main/kotlin/algorithms/other/HuffmanCode.kt) | Not Ready
 
 
